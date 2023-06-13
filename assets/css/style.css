@@ -1,0 +1,176 @@
+:root {
+  --primary: #18356f;
+  --secondary: #e6e6fa;
+  --accent: #73caef;
+  --warning: #ff4040;
+
+  --modal-body: #f5f5f5;
+
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-modal {
+  position: absolute;
+  right: 1rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: var(--modal-body);
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.modal-header {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.6rem;
+
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 10rem;
+}
+
+.form__label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
+
+.form__input {
+  width: 100%;
+  height: 3rem;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.cancel-btn {
+  background-color: var(--warning);
+  margin-right: 1rem;
+}
+
+.confirm-btn {
+  background-color: var(--accent);
+}
+
+.header {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary);
+}
+
+.header__title {
+  font-size: 3.2rem;
+  font-weight: 400;
+
+  color: var(--white);
+}
+
+.main {
+  padding-inline: 2rem;
+}
+
+.favorite__container {
+  width: 100%;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.favorite-btn {
+  background-color: var(--primary);
+}
+
+.showcase {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+}
+
+.add-btn {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+
+  background-color: var(--accent);
+}

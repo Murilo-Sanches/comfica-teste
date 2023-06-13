@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca - Comfica</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden" id="add-modal">
+      <div class="modal-header">
+        <button class="close-modal">&times;</button>
+        <h1>Adicionar livro</h1>
+      </div>
+      <div class="modal-body">
+        <span class="form__label">Título:</span>
+        <input class="form__input" type="text" />
+        <span class="form__label">Descrição:</span>
+        <input class="form__input" type="text" />
+        <span class="form__label">URL da imagem:</span>
+        <input class="form__input" type="text" />
+
+        <div class="favorite__container">
+          <button class="cancel-btn btn">Cancelar</button>
+          <button class="confirm-btn btn">Confirmar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="remove-modal">
+      <div class="modal-body">
+        <h2>Deseja excluir o livro $nome?</h2>
+
+        <div class="favorite__container">
+          <button class="cancel-btn btn">Cancelar</button>
+          <button class="confirm-btn btn">Confirmar</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 class="header__title">Biblioteca de Livros</h1>
+    </header>
+
+    <main class="main">
+      <div class="favorite__container">
+        <button class="favorite-btn btn" id="favorites">Favoritos</button>
+      </div>
+
+      <div class="showcase">
+        <button class="add-btn btn" id="add-book">Adicionar</button>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
